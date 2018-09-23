@@ -8,5 +8,6 @@ Some ideas/questions to proceed after the raw data is collected for further anal
 3) Data wrangling - methods used in this course. Python code to be created.
 4) Data classification - classifying method? Range of the classes? Python code to be created.
 5) Machine learning	- Fast Text for training based on train data
-6) Visualizing -animated line graph of the stock market after the test data tweets. Python code to be created, examples can be found in web.
+6) Summarization - power point slides
+7) Visualizing -animated line graph of the stock market after the test data tweets. Python code to be created, examples can be found in web.
 
