@@ -7,3 +7,6 @@ Some ideas/questions to proceed after the raw data is collected for further anal
 2) Sampling - it would be good to develop sampling method for selecting the sample data set (for test and train data sets). Python code to be created
 3) Data wrangling - methods used in this course. Python code to be created.
 
+
+Visualizing -animated line graph of the stock market after the tweets. Python code to be created, examples can be found in web.
+
