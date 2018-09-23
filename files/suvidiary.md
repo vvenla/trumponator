@@ -6,7 +6,7 @@ Some ideas/questions to proceed after the raw data is collected for further anal
 1) data imputation -since the twitter/stock market data is quite large i don't feel it is necessary to replace missing/strange values. Just delete those from the sample data set.
 2) Sampling - it would be good to develop sampling method for selecting the sample data set (for test and train data sets). Python code to be created
 3) Data wrangling - methods used in this course. Python code to be created.
-
-
-Visualizing -animated line graph of the stock market after the tweets. Python code to be created, examples can be found in web.
+4) Data classification - classifying method? Range of the classes? Python code to be created.
+5) Machine learning	- Fast Text for training based on train data
+6) Visualizing -animated line graph of the stock market after the test data tweets. Python code to be created, examples can be found in web.
 
