@@ -12,6 +12,7 @@ Some ideas/questions to proceed after the raw data is collected for further anal
 7) Visualizing -animated line graph of the stock market after the test data tweets. Python code to be created, examples can be found in web.
 
 2.10.2018
-The twitter has limitations for data extraction (only the latest +3000 tweets/person are available). In some web pages all the tweets (e.g. Trump) can be found in raw format. The instructor (Teemu Roos) agreed that it is ok to use already extracted data from other sources if it is accepted by the provider.
+The twitter has limitations for data extraction (only the latest +3000 tweets/person are available). In some web pages all the tweets (e.g. Trump) can be found in raw format. The instructor (Teemu Roos) agreed that it is ok to use already extracted data from other sources if it is accepted by the provider. E.g. following web page has history data of Trump:
+http://trumptwitterarchive.com/archive
 
 3.10.2018
