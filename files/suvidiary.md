@@ -1,5 +1,14 @@
 22.9.2018
-The method to extract data from Twitter:
+The method to extract data from Twitter (Anaconda + Jupyter notebook):
+1) Register as Twitter developer
+
+Tweepy module supports accessing Twitter API via OAuth
+Instructions e.g:
+https://www.pythoncentral.io/introduction-to-tweepy-twitter-for-python/
+
+Some general instructions to get Trump tweets out of Twitter:
+https://medium.freecodecamp.org/learn-python-by-analyzing-donald-trumps-tweets-ccdf156cb5a3
+http://2017.compciv.org/syllabus/assignments/homework/serials/trump-tweets-json.html
 
 
 23.9.2018: The first version of the code fetching data from twitter added (Raw_tweets_DonaldTrump.ipynb) and the first set of 200 latest tweets as json file (raw_trump_tweets.json). Some corrections needs to be done:
