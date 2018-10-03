@@ -20,3 +20,10 @@ The twitter has limitations for data extraction (only the latest +3000 tweets/pe
 http://trumptwitterarchive.com/archive
 
 3.10.2018
+The method for animated plot :
+
+
+
+
+
+The first version of animated plot presentation is attached (Animated_plot.ipynb + example data example.txt).
