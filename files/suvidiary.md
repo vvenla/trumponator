@@ -20,9 +20,9 @@ http://2017.compciv.org/syllabus/assignments/homework/serials/trump-tweets-json.
 
 Some ideas/questions to proceed after the raw data is collected for further analysis:
 1) data imputation -since the twitter/stock market data is quite large i don't feel it is necessary to replace missing/strange values. Just delete those from the sample data set.
-2) Sampling - it would be good to develop sampling method for selecting the sample data set (for test and train data sets). Python code to be created
+2) Sampling - it would be good to develop sampling method for selecting the sample data set (for test and train data sets). However it is difficult to get enough tweets for the analysis so all the tweets are used as training/test data.
 3) Data wrangling - methods used in this course. Python code to be created.
-4) Data classification - classifying method? Range of the classes? Python code to be created.
+4) Data classification - classifying method NLP (Fast text is used). Range of the classes (-1,+1),(-3,...,+3),(up,down)?
 5) Machine learning	- Fast Text for training based on train data
 6) Summarization - power point slides
 7) Visualizing -animated line graph of the stock market after the test data tweets. Python code to be created, examples can be found in web.
