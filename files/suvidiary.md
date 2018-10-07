@@ -39,3 +39,9 @@ https://www.wikihow.com/Install-FFmpeg-on-Windows
 conda install -c conda-forge ffmpeg
 
 The first version of animated plot presentation is attached (Animated_plot.ipynb + example data example.txt).
+
+7.10.2018
+
+Sourced two files of old Trump tweets from http://trumptwitterarchive.com/archive
+
+1) Tweets after election 7.11.2016-7.10.2017 in the file Old_Trump_tweets_after_elec.json
