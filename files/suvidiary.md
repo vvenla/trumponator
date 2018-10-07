@@ -45,5 +45,8 @@ The first version of animated plot presentation is attached (Animated_plot.ipynb
 Sourced two files of old Trump tweets from http://trumptwitterarchive.com/archive
 
 1) Tweets after election 8.11.2016-7.10.2017 in the file Old_Trump_tweets_after_elec.json
-
 2) The 2016 presidential campaign of Donald Trump was formally launched on June 16, 2015. In the file Old_Trump_tweets_before_elec.json are the tweets 15.6.2015-7.11.2016
+
+Two files are combined for further analysis:
+1) Raw_tweets_DonaldTrump_before_elec.json including all tweets from the launch of the presidential campaign 15.6.2015-26.9.2018
+2) Raw_tweets_DonaldTrump_after_elec.json including all tweets after the election day 8.11.2016-26.9.2018
