@@ -1,0 +1,12 @@
+
+- Stock data for daily close
+	- Vili
+- Visualization (Suvi)
+	- stock data
+	- predictions
+	- (tweets)
+- statistics
+	- piechart (correct, almost correct, wrong)
+		- Suvi chart, Vili data
+	- barchart of successfull predictions % (before presidency, after presidency, all tweets, random classifier)
+		- Suvi chart, Venla data
