@@ -8,6 +8,7 @@
   * [Communication of results](#communication-of-results)
   * [Operationalization](#operationalization)
 - [Steps of action](#steps-of-action)
+  * [Idea](#idea)
   * [Uploading the data](#uploading-the-data)
     + [Tweets](#tweets)
     + [Stock market data](#stock-market-data)
@@ -38,7 +39,7 @@ Lorem ipsum...
 
 ### Venla
 
-Lorem ipsum...
+Venla has been studying Mathematics and Computer science before starting the Danta Science masters program. She had some experience of natural language progressing before the project.
 
 ## Project description
 
@@ -73,40 +74,60 @@ and speculated by many, so it is interesting to do research on the matter.
 
 ## Steps of action
 
-Lorem ipsum...
+In thie section we will explain how the project developed, from ideation and data wrangling to the model and user interface. We will also mention the challenges and other unpredictable things we faced on each step.
+
+### Idea
+
+Where did the idea came from?
 
 ### Uploading the data
 
-Lorem ipsum...
-
 #### Tweets
 
-Lorem ipsum...
+Lorem ipsum... (Suvi)
 
 #### Stock market data
 
-Lorem ipsum...
+Lorem ipsum... (Vili)
 
 ### Wrangling
 
-Lorem ipsum...
-
 #### Tweets
 
-Lorem ipsum...
+At this points we had tweets in two json-files, before and after the election day. Texts of the tweets looked all something like this:
+
+> Thank you @ShopFloorNAM. An honor to be with you today. Great news! Manufacturers report record-high economic optimism in 2017. #TaxReform https://t.co/4sgMWGotOF
+
+<!-- toc -->
+
+To clean the texts we first chenged all the links to only "https", since we only wanted our model to recognise the existence of a tweet, not the content. We also removed all the special characters, so that there was only letters left. After that our examle tweet looked like this:
+
+> Thank you ShopFloorNAM An honor to be with you today Great news Manufacturers report record high economic optimism in TaxReform https
+
+<!-- toc -->
+
+The last step was to change everything to lower case letters:
+
+> thank you https an honor to be with you today great news manufacturers report record high economic optimism in taxreform https
+
+<!-- toc -->
+
+Clean texts were then saved as a json-file, together with original tweets and the timestamps. We made three files: Before and after the election day, and one that had all tweets from both categories.
+
+Whwn we tried to combine the data from tweets and stock markets, we noticed that there was one more thing to wrangle in tweets: Timestamps were not in easily readable form, so we had to change those and rewrite the json-files.
 
 #### Stock market data
 
-Lorem ipsum...
+Lorem ipsum... (Vili)
 
 #### Combining the datasets
 
-Lorem ipsum...
+Lorem ipsum... (Vili)
 
 ### Data analysis
 
 #### Making the model
 
-Lorem ipsum...
+FastText...
 
 ## Results
