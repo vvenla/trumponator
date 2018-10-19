@@ -50,3 +50,10 @@ Two files are combined for further analysis:
 1) Raw_tweets_DonaldTrump_before_elec.json including 13132 tweets starting from the launch of the presidential campaign 15.6.2015-26.9.2018
 2) Raw_tweets_DonaldTrump_after_elec.json including 5341 tweets after the election day 8.11.2016-26.9.2018
 
+11.10.2018
+The file Animated_plot.ipynb is updated
+
+13.10.2018
+The file Animated_plot.ipynb was updated to present stock market data of the latest 4 months. The arrows up an down present the direction of the predicted stock market change (six classes of small, medium and big change up or down). The green arrows are equal  predictions to the real big stock market changes and the red arrows are other predicted changes. Also the cleaned tweets of the green arrows are added as annotations to the graph. 
+The animation function is not optimized enough since it can't process more than 4 months of data (depending on how many arrows it has to present). Also saving the animation video in the file is still in progress.
+
