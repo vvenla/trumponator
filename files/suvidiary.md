@@ -57,3 +57,5 @@ The file Animated_plot.ipynb is updated
 The file Animated_plot.ipynb was updated to present stock market data of the latest 4 months. The arrows up an down present the direction of the predicted stock market change (six classes of small, medium and big change up or down). The green arrows are equal  predictions to the real big stock market changes and the red arrows are other predicted changes. Also the cleaned tweets of the green arrows are added as annotations to the graph. 
 The animation function is not optimized enough since it can't process more than 4 months of data (depending on how many arrows it has to present). Also saving the animation video in the file is still in progress.
 
+14.10.2018
+The file combine_tweets_and_stocks_plots.ipynb is added to github including the tweets and stock market data combination. Also the pie graph of the predicion accurary is added (how many predicted changes are classified exactly in the correct class, how many changes are classified to the correct direction althought not to the correct class and how many to the opposite direction class). Also source data descriptive statistics is added to the run.
