@@ -65,3 +65,13 @@ The file Animated_plot.ipynb is upgraded for the presentation and the video is s
 -The data size before and after the election should be quite similar and it should be checked that the amount of tweets within each class is equal
 -user interface for the trumponator should be build up (one option is to create a github page for the trumponator)
 -report should be according to the general instructions and all the highlighted points should be commented in the report
+
+22.10.2018
+New files are commited to github:
+-Animated_plot.ipynb
+-animation.txt
+-combine_tweets_and_stocks_data.ipynb
+
+Also the file tweets_and_stocks_desc_stat.ipynb is under construction for desriptive analytics
+
+
