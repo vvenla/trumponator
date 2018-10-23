@@ -72,6 +72,9 @@ New files are commited to github:
 2) animation (.txt)
 3) combine_tweets_and_stocks_data.ipynb
 
-Also the file tweets_and_stocks_desc_stat.ipynb is under construction for desriptive analytics
+23.10.2018
+The file tweets_and_stocks_desc_stat.ipynb is added to the github but is still under construction for desriptive analytics.
+The text for the report is in progress but not yet in github.
+
 
 
