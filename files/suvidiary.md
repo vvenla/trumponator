@@ -62,15 +62,15 @@ The file combine_tweets_and_stocks_plots.ipynb is added to github including the 
 
 17.10.2018
 The file Animated_plot.ipynb is upgraded for the presentation and the video is saved by Venla as .mp4. It is still not clear how to do the saving with python. Also the pie graph of the file combine_tweets_and_stocks_plots.ipynb is updated. The presentation goes well and few issues are pointed out by the instructor:
--The data size before and after the election should be quite similar and it should be checked that the amount of tweets within each class is equal
--user interface for the trumponator should be build up (one option is to create a github page for the trumponator)
--report should be according to the general instructions and all the highlighted points should be commented in the report
+1) The data size before and after the election should be quite similar and it should be checked that the amount of tweets within each class is equal
+2) user interface for the trumponator should be build up (one option is to create a github page for the trumponator)
+3) report should be according to the general instructions and all the highlighted points should be commented in the report
 
 22.10.2018
 New files are commited to github:
--Animated_plot.ipynb
--animation.txt
--combine_tweets_and_stocks_data.ipynb
+1) Animated_plot.ipynb
+2) animation (.txt)
+3) combine_tweets_and_stocks_data.ipynb
 
 Also the file tweets_and_stocks_desc_stat.ipynb is under construction for desriptive analytics
 
