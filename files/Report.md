@@ -132,6 +132,7 @@ FastText...
 
 ## Results
 
-Inline-style: 
-![alt text](https://github.com/vvenla/trumponator/edit/master/files/Fig1.jpg)
+
+![GitHub Logo](/Fig1.jpg)
+Format: ![Alt Text](https://github.com/vvenla/trumponator/edit/master/files)
 
