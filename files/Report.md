@@ -133,6 +133,5 @@ FastText...
 ## Results
 
 
-
-!(https://github.com/vvenla/trumponator/edit/master/files/Fig1.PNG)
+![](https://github.com/vvenla/trumponator/edit/master/files/Fig1.PNG)
 
