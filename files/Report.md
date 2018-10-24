@@ -47,6 +47,9 @@ Trumponator is a tool for predicting stock market development based on the tweet
 We use advanced machine learning techniques like natural language processing to analyse the tweets and an artificial 
 intelligence to predict how the stock markets will behave.
 
+
+
+
 ### Data
 
 Tweets of Donald Trump, preprocessed by removing special characters, punctuation and case specific stopwords. We access 
@@ -133,3 +136,7 @@ FastText...
 ## Results
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/Fig1.PNG "Fig1")
+
+## Summary
+
+
