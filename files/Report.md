@@ -131,3 +131,9 @@ Lorem ipsum... (Vili)
 FastText...
 
 ## Results
+
+
+![Alt Text](https://github.com/vvenla/trumponator/edit/master/files/Fig1.jpg)
+
+![Alt Text](https://github.com/vvenla/trumponator/edit/master/files/Fig1.png)
+
