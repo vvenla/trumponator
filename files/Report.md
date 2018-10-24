@@ -133,6 +133,5 @@ FastText...
 ## Results
 
 
-![GitHub Logo](/Fig1.jpg)
-Format: ![Alt Text](https://github.com/vvenla/trumponator/edit/master/files)
+![Alt Text](https://github.com/vvenla/trumponator/edit/master/files/Fig1.jpg)
 
