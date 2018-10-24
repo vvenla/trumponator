@@ -132,6 +132,4 @@ FastText...
 
 ## Results
 
-
-![Fig1](https://github.com/vvenla/trumponator/raw/master/files/pictures/Fig1.png "fig1")
-
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/Fig1.PNG "Fig1")
