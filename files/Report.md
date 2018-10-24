@@ -129,6 +129,17 @@ Lorem ipsum... (Vili)
 
 ### Data analysis
 
+#### Descriptive statistics
+
+##### TF-IDF scores
+[Link text](## Appendix)
+The TF-IDF score is calculated for each word, using each tweet as a separate document. More information about the process is described in the <a id="Appendix">Appendix</a> Term frequency-inverse document frequency.
+
+
+The total TF-IDF tweet score is averaged for each tweet to represent sentiment score of the tweet. In the table it is seen that the TF-IDF score range is widest within the big negative stock market change class and also the mean sentiment score value is biggest in the same class. The smallest mean for the score and lowest standard deviation can be seen in the medium stock market change classes. For negative stock market change classes the sentiment score values vary more than for the positive classes.
+
+
+
 #### Making the model
 
 FastText...
@@ -140,3 +151,7 @@ FastText...
 ## Summary
 
 
+## Appendix
+
+### Term frequency-inverse document frequency
+TF-IDF stands for term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus.
