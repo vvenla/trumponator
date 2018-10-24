@@ -133,7 +133,7 @@ FastText...
 ## Results
 
 
-![Alt Text](https://github.com/vvenla/trumponator/edit/master/files/Fig1.jpg)
+![Alt Text](https://github.com/vvenla/trumponator/edit/master/files/Fig1.JPG)
 
-![Alt Text](https://github.com/vvenla/trumponator/edit/master/files/Fig1.png)
+![Alt Text](https://github.com/vvenla/trumponator/edit/master/files/Fig1.PNG)
 
