@@ -133,5 +133,5 @@ FastText...
 ## Results
 
 
-![](https://github.com/vvenla/trumponator/edit/master/files/Fig1.PNG)
+![xx](https://github.com/vvenla/trumponator/edit/master/files/Fig1.PNG)
 
