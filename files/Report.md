@@ -132,8 +132,9 @@ Lorem ipsum... (Vili)
 #### Descriptive statistics
 
 ##### TF-IDF scores
-[Link text](## Appendix)
-The TF-IDF score is calculated for each word, using each tweet as a separate document. More information about the process is described in the <a id="Appendix">Appendix</a> Term frequency-inverse document frequency.
+
+The TF-IDF score is calculated for each word, using each tweet as a separate document. More information about the process is described in the [Term frequency-inverse document frequency](#Term-frequency-inverse-document-frequency) Term frequency-inverse document frequency.
+
 
 
 The total TF-IDF tweet score is averaged for each tweet to represent sentiment score of the tweet. In the table it is seen that the TF-IDF score range is widest within the big negative stock market change class and also the mean sentiment score value is biggest in the same class. The smallest mean for the score and lowest standard deviation can be seen in the medium stock market change classes. For negative stock market change classes the sentiment score values vary more than for the positive classes.
