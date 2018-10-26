@@ -177,8 +177,9 @@ The third model was formed by taking all the tweets (15.6.2015-25.9.2018).
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_per_all.PNG "Long-term percentage share of tweets")
 
 
-As a conclusion accuracy of all the models are presented in the bar chart. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018).
+As a conclusion accuracy of all the models are presented in the bar chart. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). The randomly selected tweets are the worst ones to predict the stock market change.
 
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG "All models")
 
 
 
