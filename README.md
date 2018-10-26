@@ -15,6 +15,7 @@ TODO gif and pitch here
 2. Install the [FastText library][fasttext] to be able to run trumponator.
 
 3. Run trumponator.py using [python3](https://realpython.com/installing-python/).
+
 `python3 trumponator.py`
 
 TODO add gif
