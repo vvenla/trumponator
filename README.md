@@ -1,5 +1,5 @@
 # Trumponator
-Trumponator is tool to predict stock market development. It's utilizes a supervised machine learning to predict changes of Dow Jones Industrial Average by reading tweets of Donald Trump, the president of United States. Developed further, trumponator would be cabable to predict any stock market index based on any individual's (or group's of individuals) tweets.
+Trumponator is tool to predict stock market development. It utilizes supervised machine learning to predict changes of Dow Jones Industrial Average by reading tweets of Donald Trump, the president of United States. Developed further, trumponator would be cabable to predict any stock market index based on any individual's (or group's of individuals) tweets.
 
 This is a project work for Introduction to Data Science -course of University of Helsinki, 2018.
 
@@ -17,7 +17,11 @@ TODO gif and pitch here
 3. Run trumponator.py using [python3](https://realpython.com/installing-python/).
 `python3 trumponator.py`
 
+TODO add gif
+
 4. Give the program a tweet on the command line.
+
+TODO add gif
 
 5. Read the result, invest and profit $$$.
 
