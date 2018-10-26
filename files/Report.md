@@ -152,10 +152,42 @@ FastText...
 ## Summary
 
 
+The election day for the U.S. President was the 8th of Nov 2016. During the presidency until 25th of Sep 2018 Trump has posted 854 tweets (counting only business days).
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_aft.PNG "Accuracy of the model during presidency")
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_aft.PNG "Number of tweets during presidency")
+
+The results of the model predicting Trump's influence on the stock market after the election day are very promising. However the number of tweets after the election day migth not be sufficient enough for reliable model. Unfortunately the number of tweets by president Trump are limited e the short due to the short period of time after election.
+
+Therefore it was decided to use another dataset to train another model and compare results of these two models. One logical solution is to take equal amount of tweets of Trump before he was elected as president. The assumption is that his authority did not have such an effect on stock markets when he was just one of the applicants during the presidential campaign. It is necessary to select stock market period close to the period of the first model to minimize effects of the market situation. Therefore 831 tweets before the presidential election day are selected (starting at the 15th of June 2015 when the Trump's presidential campaign was launched).
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_bef.PNG "Accuracy of the model during the presidential campaign")
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_bef.PNG "Number of tweets during the presidential campaign")
+
+
+The third model was formed by taking all the tweets (15.6.2015-25.9.2018). 
+
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_all.PNG "Long-term accuracy of the model")
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_all.PNG "Long-term number of tweets")
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_per_all.PNG "Long-term percentage share of tweets")
+
+
+As a conclusion accuracy of all the models are presented in the bar chart. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018).
+
+
+
+
 ## Appendix
 
 ### Term frequency-inverse document frequency
 TF-IDF stands for term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus.
 
+
+### Correlation results
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/Corr_all.PNG "Correlation test results")
