@@ -147,7 +147,7 @@ FastText...
 
 ## Results
 
-![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/Fig1.PNG "Fig1")
+
 
 ## Summary
 
@@ -156,3 +156,6 @@ FastText...
 
 ### Term frequency-inverse document frequency
 TF-IDF stands for term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus.
+
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/Corr_all.PNG "Correlation test results")
