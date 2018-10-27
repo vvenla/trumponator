@@ -146,11 +146,9 @@ The total TF-IDF tweet score is averaged for each tweet to represent sentiment s
 
 ##### Combined
 
-In the appendix [Correlation results](#Correlation-results) we have found out that there is strong evidence that the stock market daily changes are correlated with the tweet TF_IDF scores.
+In the appendix [Correlation results](#Correlation-results) we have studied that there is strong evidence that the stock market daily changes are correlated with the tweet TF_IDF scores. This means that we have good foundation for creating the predictive model based on these  
 
-Although the variables are correlated they do not necessarily have causal relatonship between each other. Causation indicates that the change in one variable is the cause of the change in the values of the other variable. In the test setting the Trump tweets might not cause stock market changes but it is be possible that the stock market changes do effect on Trump opinions/tweets.
-Causation is usually studied by organizing a controlled situation but there are also few techniques that can be used. Granger causality test could be done for comparing the TF/IDF scores with the stock daily change data:
-
+Although the variables are correlated they do not necessarily have causal relatonship between each other. Causation indicates that the change in one variable is the cause of the change in the values of the other variable. In the test setting the Trump tweets might cause stock market daily changes but it is also possible that the stock market changes do have an effect on Trump opinions/tweets. Causation is usually studied by organizing a controlled situation which is not possible in real life. But there are also few techniques that can be used when studying e.g. time series such as stock markets. Granger causality test could be done for comparing the TF/IDF scores with the stock daily change data in a way described in the appendix [Granger causality test](#Granger-causality-test)
 
 
 #### Making the model
@@ -205,7 +203,7 @@ TF-IDF stands for term frequency-inverse document frequency, and the TF_IDF weig
 
 Correlation tests are performed to assure if the relationship between the stock market daily changes and TF-IDF scores representing tweet sentiment scores can be found. First the normality of the variables need to be checked. Therefore density plot and histogram for both stock market daily changes and TF_IDF scores are plotted. This chart is a variation of a histogram that uses kernel smoothing to plot values, allowing for smoother distributions by smoothing out the noise. In the plots it is easy to see that the stock market daily change data distribution is normal but TF-IDF scores are not normally distributed. In the scatter plot in the figure the TF-IDF scores are concentrated close to the zero showing that most tweets don’t include ”significant” words affecting high scores. 
 
-![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_df_all.PNG "Density plot and histogram for stock market daily change")
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_dc_all.PNG "Density plot and histogram for stock market daily change")
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_tf_all.PNG "Density plot and histogram for TF_IDF scores")
 
@@ -216,3 +214,18 @@ The sampling distribution for Pearson's correlation does assume normality; in pa
 Rank correlation non-parametric tests can be used for examing independency of variables since test like Spearman's and Kendall's Tau do not rest upon an assumption of normality. Rank correlation refers to the association between the observed values of two variables. The negative association means that as the values for one variable increase, then the values of the other variable decrease. Correlation quantifies this association, often as a measure between the values -1 to 1 for perfectly negatively correlated and perfectly positively correlated. The calculated correlation is referred to as the “correlation coefficient.” This correlation coefficient can then be interpreted to describe the measures. In the table the results of the three correlation tests are presented. All of them indicate that there is correlation between stock market daily changes and TF/IDF scores. The selected significance level is 5%.
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/Corr_all.PNG "Correlation test results")
+
+
+### Granger causality test
+
+Granger Causality (GC) is a probabilistic approach for determining if information about past of one variable can explain another and it is based on aversion of the probabilistic theory of causality. A time-series Y (stock market daily changes) can be written as an autoregressive process in which the past values of Y are able to explain (in part) the current value of Y:
+
+
+
+Consider another variable X (tweets TF_IDF scores) which has past values as well. If the past values of X help improve the prediction of current values of Y beyond what we get with past values of Y alone, then X is said to Granger Cause Y. The test is under taken as:
+
+
+
+The test is an F-test on all being jointly equal to zero for all values of J. If you reject the null hypothesis then X is said to Granger Cause Y.
+
+
