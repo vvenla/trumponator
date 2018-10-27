@@ -139,10 +139,15 @@ The total TF-IDF tweet score is averaged for each tweet to represent sentiment s
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_tf_all.PNG "Statistics for TF_IDF scores")
 
+(how to present the tweets with high scores)
+
 ##### Stock market daily changes
 
+The stock market daily changes during latest 20 years vary according to the figure presented below. Few interesting peaks hit our analysis period starting from 15th June 2015. In the fall 2015 investors sold shares globally as a result of slowing growth in the GDP of China, a fall in petroleum prices and the Greek debt default in June 2015. Another roller-coaster is seen after a long calm rise period in January-March 2018 when investors suddenly became worried the economy, boosted by huge tax cuts and fear of inflation. The decline returned to the normal level soon. The analysis period is otherwise quite stable and therefore perfect for detecting weak signals caused by twitter tweets.
 
-##### Combined
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/stock_all.PNG "Stock market daily changes time-series")
+
+##### Comparison of tweet sentiment and stock market data
 
 In the appendix [Correlation results](#Correlation-results) we have studied that there is strong evidence that the stock market daily changes are correlated with the tweet TF_IDF scores. This means that we have good foundation for creating the predictive model based on these  
 
