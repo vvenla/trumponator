@@ -35,7 +35,7 @@ Lorem ipsum...
 
 ### Suvi
 
-Suvi has Bachelor in Statistics and some Data Science studies
+Suvi has Bachelor in Statistics and some introductory Data Science Master studies completed.
 
 ### Venla
 
