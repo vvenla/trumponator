@@ -224,8 +224,8 @@ Granger Causality (GC) is a probabilistic approach for determining if informatio
 
 Consider another variable X (tweets TF_IDF scores) which has past values as well. If the past values of X help improve the prediction of current values of Y beyond what we get with past values of Y alone, then X is said to Granger Cause Y. The test is under taken as:
 
-
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/math1.PNG)
 
 The test is an F-test on all being jointly equal to zero for all values of J. If you reject the null hypothesis then X is said to Granger Cause Y.
 
-
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/math2.PNG)
