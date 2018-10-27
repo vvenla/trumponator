@@ -143,15 +143,19 @@ The total TF-IDF tweet score is averaged for each tweet to represent sentiment s
 
 ##### Stock market daily changes
 
-The stock market daily changes during latest 20 years vary according to the figure presented below. Few interesting peaks hit our analysis period starting from 15th June 2015. In the fall 2015 investors sold shares globally as a result of slowing growth in the GDP of China, a fall in petroleum prices and the Greek debt default in June 2015. Another roller-coaster is seen after a long calm rise period in January-March 2018 when investors suddenly became worried the economy, boosted by huge tax cuts and fear of inflation. The decline returned to the normal level soon. The analysis period is otherwise quite stable and therefore perfect for detecting weak signals caused by twitter tweets.
+The stock market daily changes during latest 20 years vary according to the figure presented below. Few interesting peaks hit our analysis period starting from 15th June 2015. In the fall 2015 investors sold shares globally as a result of slowing growth in the GDP of China, a fall in petroleum prices and the Greek debt default in June 2015. Another roller-coaster is seen after a long calm rise period in January-March 2018 when investors suddenly became worried the economy, boosted by huge tax cuts and fear of inflation. After the decline the market returned to the normal trend soon. The analysis period is otherwise quite stable and therefore perfect for detecting weak signals caused by twitter tweets.
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/stock_all.PNG "Stock market daily changes time-series")
 
 ##### Comparison of tweet sentiment and stock market data
 
-To be able to use the selected data sources as basis for predictive model we need to prove that there is relationship between these variables. In the appendix [Correlation results](#Correlation-results) the strong evidence is build for the argument that the stock market daily changes are correlated with the tweet TF_IDF scores. Therefore we have good foundation for creating the predictive model based on these data sources.
+When plotting the stock market daily changes and TF-IDF scores it is evident that there are only few larger stock market changes during the analysis period. In the scatter plot figure the TF-IDF scores are concentrated close to the zero showing that most tweets don’t include ”significant” words affecting high scores. 
 
-Although the variables are correlated they do not necessarily have causal relatonship between each other. Causation indicates that the change in one variable is the cause of the change in the values of the other variable. In the test setting the Trump tweets might cause stock market daily changes but it is also possible that the stock market changes do have an effect on Trump opinions/tweets. Causation is usually studied by organizing a controlled situation which is not possible in real life. But there are also few techniques that can be used when studying e.g. time series such as stock markets. Granger causality test could be done for comparing the TF/IDF scores with the stock daily change data in a way described in the appendix [Granger causality test](#Granger-causality-test)
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/Scatter_all.PNG "Stock market daily changes vs. tweet sentiment scores")
+
+To be able to use the selected data sets as basis for predictive model we need to prove that there is relationship between these variables. In the appendix [Correlation results](#Correlation-results) the strong evidence is build for the argument that the stock market daily changes are correlated with the tweet TF_IDF scores. Therefore we have good foundation for creating the predictive model based on these data sets.
+
+Although the variables are correlated they do not necessarily have causal relatonship between each other. Causation indicates that the change in one variable is the cause of the change in the values of the other variable. In the test setting the Trump tweets might cause some portion of the stock market daily changes but it is also possible that the stock market changes do have an effect on Trump opinions/tweets. Causation is usually studied by organizing a controlled situation which is not possible in real life. But there are also few techniques that can be used when studying e.g. time series such as stock markets. Granger causality test could be done for comparing the TF/IDF scores with the stock daily change data in a way described in the appendix [Granger causality test](#Granger-causality-test)
 
 
 #### Making the model
@@ -195,12 +199,15 @@ As a conclusion accuracy of all the models are presented in the bar chart. Also 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG "All models")
 
 
+Improvements
+
+The number of tweets daily and number of retweets could be used as explanatory variables.
+
 
 ## Appendix
 
 ### Term frequency-inverse document frequency
 TF-IDF stands for term frequency-inverse document frequency, and the TF_IDF weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus.
-
 
 ### Correlation results
 
