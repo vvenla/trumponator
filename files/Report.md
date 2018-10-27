@@ -186,9 +186,21 @@ As a conclusion accuracy of all the models are presented in the bar chart. Also 
 ## Appendix
 
 ### Term frequency-inverse document frequency
-TF-IDF stands for term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus.
+TF-IDF stands for term frequency-inverse document frequency, and the TF_IDF weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus.
 
 
 ### Correlation results
+
+Correlation tests are performed to assure if the relationship between the stock market daily changes and TF-IDF scores representing tweet sentiment scores can be found. First the normality of the variables need to be checked. Therefore density plot and histogram for both stock market daily changes and TF_IDF scores are plotted. This chart is a variation of a histogram that uses kernel smoothing to plot values, allowing for smoother distributions by smoothing out the noise. In the plots it is easy to see that the stock market daily change data distribution is normal but TF-IDF scores are not normally distributed. In the scatter plot in the figure the TF-IDF scores are concentrated close to the zero showing that most tweets don’t include ”significant” words affecting high scores. 
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_df_all.PNG "Density plot and histogram for stock market daily change")
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_tf_all.PNG "Density plot and histogram for TF_IDF scores")
+
+The sampling distribution for Pearson's correlation does assume normality; in particular this means that although you can compute it, conclusions based on significance testing may not be sound. Outliers seen in the boxplot figure for varibles can have great influence on Pearson's correlations. Many outliers in applied settings reflect measurement failures or other factors that the model is not intended to generalise to. 
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/boxplot_all.PNG "Boxplot for the ")
+
+Rank correlation non-parametric tests can be used for examing independency of variables since test like Spearman's and Kendall's Tau do not rest upon an assumption of normality. Rank correlation refers to the association between the observed values of two variables. The negative association means that as the values for one variable increase, then the values of the other variable decrease. Correlation quantifies this association, often as a measure between the values -1 to 1 for perfectly negatively correlated and perfectly positively correlated. The calculated correlation is referred to as the “correlation coefficient.” This correlation coefficient can then be interpreted to describe the measures. In the table the results of the three correlation tests are presented. All of them indicate that there is correlation between stock market daily changes and TF/IDF scores. The selected significance level is 5%.
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/Corr_all.PNG "Correlation test results")
