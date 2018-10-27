@@ -35,7 +35,7 @@ Lorem ipsum...
 
 ### Suvi
 
-Lorem ipsum...
+Suvi has Bachelor in Statistics and some Data Science studies
 
 ### Venla
 
@@ -43,16 +43,14 @@ Venla has been studying Mathematics and Computer science before starting the Dan
 
 ## Project description
 
-Trumponator is a tool for predicting stock market development based on the tweets of a famous comedian Donald Trump. 
-We use advanced machine learning techniques like natural language processing to analyse the tweets and an artificial 
-intelligence to predict how the stock markets will behave.
-
-
+Trumponator is a tool for predicting stock market changes based on the twitter tweets of a famous comedian Donald Trump. 
+We use advanced machine learning technique natural language processing to analyse the tweets and an artificial 
+intelligence to predict how the stock markets will behave. 
 
 
 ### Data
 
-Tweets of Donald Trump, preprocessed by removing special characters, punctuation and case specific stopwords. We access 
+Twitter tweets of Donald Trump, preprocessed by removing special characters, punctuation and case specific stopwords. We access 
 the tweets by Twitter API.
  
 Stock market information (timestamps, value) accessed through XXX -API
@@ -60,34 +58,38 @@ Stock market information (timestamps, value) accessed through XXX -API
 
 ### Data analysis
 
-We will build a supervised vector model with Fast Text -library, where the tweets will be labeled by effects on the stock 
-market. The effects will be calculated from the changes in stock markets in a certain time frame after the tweets timestamp.
+The supervised vector model is built with Fast Text -library, where the tweets are labeled within six sentiment classes based on the real stock market changes. The stock market change is the difference in business day closing values. The six sentiment classes for tweets are evaluated by diviving the daily changes in real stock market in small, medium and big negative or positive class.
 
 ### Communication of results
 
-We will document our project and findings, and make a visualization where we compare the real stock markets and the changes 
-our model predicted. We will demonstrate the power (or the lack of it) of our model by applying the predictor to recent 
-tweets of Trump.
+The document of the project and findings can be found in github with the visualization of the real stock market daily changes and the changes our model predicted. The power of the model is demonstrated by applying the predictor to recent tweets of Trump.
+
+(github page)
 
 ### Operationalization
 
-TIf the results match the real stock markets, there is a tool for traders to make short term investments. Our predictor 
-will show if there is clear correlation between the tweets of Trump and the stock market. This correlation is now suspected 
-and speculated by many, so it is interesting to do research on the matter.
+Trumponator is a tool for traders to base on the decision of trading. The tool is especially useful as long as Trump is the President of U.S. or has a high political status. Although the stock market changes depend also on many non-political factors there is strong correlation between the tweets of Trump/current political climate and the stock market daily changes. This correlation is currently suspected and speculated by many other studies, so one purpose of the tool is to prove the connection between U.S politics and financial markets. There are also other public figures who's tweets migth have direct effect on stock markets and who could be involved in the model in the next step. Elon Musk and the car industry could be mentioned as one of the examples.
 
 ## Steps of action
 
-In thie section we will explain how the project developed, from ideation and data wrangling to the model and user interface. We will also mention the challenges and other unpredictable things we faced on each step.
+In the next chapters we will explain how the project developed from brainstorming and data sourcing, via data wrangling and predictive analysis, to the model creation and user interface. We will also mention the challenges and other unpredictable things we faced on each step.
 
-### Idea
+### Idea behind the Trumponator
 
-Where did the idea came from?
+U.S politics have always been one of the factors affecting stock markets. The country is influencial in worldwide perspective and stock markets nationally and internationally follow U.S. politics and relationship to other countries. To give few examples if the political decision is made to raise taxes that has a clear negative affect to the stock markets. Also changing laws and regulations, or export/import sanctions for products may have either positive or negative impact. Goverment spending and misallocating of resources and money supply may hurt the economy resulting either inflationary or deflationary environment. Monetary policy may cause direct up or down change in interest rates and e.g. higher rates make credit more expensive for companies and the stock markets turn down. 
+
+The interest towards the Donald Trump has arises from his contradictory personality in today's politics in U.S.  As a business man he understands how to manipulate markets but his impulsive behaviour especially towards differing opinions cause unwanted reactions. During the Trump presidency many of the above mentioned political decisions have been made causing uncertainty in the financial markets.
+
 
 ### Uploading the data
 
 #### Tweets
 
-Lorem ipsum... (Suvi)
+Twitter tweets from the real Donald Trump account were extracted but due to Twitter limitations only the latest 3000 tweets could be fetched via Twitter API. To get wider data set it was decided to fetch older tweets from one of the open twitter archieves of Trump tweets:
+
+http://trumptwitterarchive.com/archive
+
+Authenticity of the older tweets can not be verified but there is no other way to get enough tweets for analyses.
 
 #### Stock market data
 
@@ -163,10 +165,6 @@ Although the variables are correlated they do not necessarily have causal relato
 FastText...
 
 ## Results
-
-
-
-## Summary
 
 
 The prediction model was formed by taking all the tweets starting at the 15th of June 2015 when the Trump's presidential campaign was launched until 25th of Sep 2018. The results of the model predicting Trump's influence on the stock market are very promising.
