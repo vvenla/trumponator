@@ -99,7 +99,7 @@ Lorem ipsum... (Vili)
 
 #### Tweets
 
-At this points we had tweets in two json-files, before and after the election day. Texts of the tweets looked all something like this:
+After uploading we had tweets in two json-files, divided in before and after the election day. Texts of the tweets looked all something like this:
 
 > Thank you @ShopFloorNAM. An honor to be with you today. Great news! Manufacturers report record-high economic optimism in 2017. #TaxReform https://t.co/4sgMWGotOF
 
@@ -162,7 +162,9 @@ Although the variables are correlated they do not necessarily have causal relato
 
 #### Making the model
 
-FastText...
+We used the tweets labeled with the stock market changes to teach the model. FastText takes in the labeled data and builds a model based on word vectors. It is then able to predict a label to a given text, in this case, a tweet. 
+
+We splitted the labeled data into training set and validation set. The training set consisted of 85% of the data, and we used the remaining 15% to validate and test the accuracy of the model. 
 
 ## Results
 
