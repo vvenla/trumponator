@@ -141,6 +141,18 @@ The total TF-IDF tweet score is averaged for each tweet to represent sentiment s
 
 
 
+##### Stock market daily changes
+
+
+##### Combined
+
+In the appendix [Correlation results](#Correlation-results) we have found out that there is strong evidence that the stock market daily changes are correlated with the tweet TF_IDF scores.
+
+Although the variables are correlated they do not necessarily have causal relatonship between each other. Causation indicates that the change in one variable is the cause of the change in the values of the other variable. In the test setting the Trump tweets might not cause stock market changes but it is be possible that the stock market changes do effect on Trump opinions/tweets.
+Causation is usually studied by organizing a controlled situation but there are also few techniques that can be used. Granger causality test could be done for comparing the TF/IDF scores with the stock daily change data:
+
+
+
 #### Making the model
 
 FastText...
@@ -199,7 +211,7 @@ Correlation tests are performed to assure if the relationship between the stock 
 
 The sampling distribution for Pearson's correlation does assume normality; in particular this means that although you can compute it, conclusions based on significance testing may not be sound. Outliers seen in the boxplot figure for varibles can have great influence on Pearson's correlations. Many outliers in applied settings reflect measurement failures or other factors that the model is not intended to generalise to. 
 
-![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/boxplot_all.PNG "Boxplot for the ")
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/boxplot_all.PNG "Boxplot for the variables")
 
 Rank correlation non-parametric tests can be used for examing independency of variables since test like Spearman's and Kendall's Tau do not rest upon an assumption of normality. Rank correlation refers to the association between the observed values of two variables. The negative association means that as the values for one variable increase, then the values of the other variable decrease. Correlation quantifies this association, often as a measure between the values -1 to 1 for perfectly negatively correlated and perfectly positively correlated. The calculated correlation is referred to as the “correlation coefficient.” This correlation coefficient can then be interpreted to describe the measures. In the table the results of the three correlation tests are presented. All of them indicate that there is correlation between stock market daily changes and TF/IDF scores. The selected significance level is 5%.
 
