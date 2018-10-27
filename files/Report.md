@@ -190,11 +190,11 @@ The rest 831 tweets before the presidential election day are starting from the p
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_bef.PNG "Number of tweets during the presidential campaign")
 
-The difference in results is clear before and after the election day. It was decided to separate dataset to train two models before and after the Trump's election as U.S. president. The results of these two models are compared to review if the presidency has improved his power. The assumption is that his authority did not have such an effect on stock markets when he was just one of the applicants during the presidential campaign.
+The difference in results is clear before and after the election day. It was decided to separate dataset to train two models before and after the Trump's election as U.S. President. The results of these two models are compared to review if the presidency has improved his power. The assumption is that his authority did not have such an effect on stock markets when he was just one of the applicants during the presidential campaign.
 
 One logical solution is to take equal amount of Trump tweets before he was elected as president. It is necessary to select stock market period close to the period of the "after" model to minimize effects of the market situation. All the tweets before the presidential election day (but after the launch of the campaign) are selected for the "before" model.
 
-As a conclusion accuracy of all the models are presented in the bar chart. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). The randomly selected tweets are the worst ones to predict the stock market change.
+As a conclusion accuracy of all the models are presented in the bar chart. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). The randomly selected tweets are the worst ones to predict the stock market change. Although the Trump tweets as president seem to be better fit for explaining stock market changes that does not transform to better model when comparing the before and after results. The best model is the one using all the tweets implying that the more data points are available for training the better the result will be.
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG "All models")
 
