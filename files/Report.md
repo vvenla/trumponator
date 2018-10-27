@@ -149,7 +149,7 @@ The stock market daily changes during latest 20 years vary according to the figu
 
 ##### Comparison of tweet sentiment and stock market data
 
-In the appendix [Correlation results](#Correlation-results) we have studied that there is strong evidence that the stock market daily changes are correlated with the tweet TF_IDF scores. This means that we have good foundation for creating the predictive model based on these  
+To be able to use the selected data sources as basis for predictive model we need to prove that there is relationship between these variables. In the appendix [Correlation results](#Correlation-results) the strong evidence is build for the argument that the stock market daily changes are correlated with the tweet TF_IDF scores. Therefore we have good foundation for creating the predictive model based on these data sources.
 
 Although the variables are correlated they do not necessarily have causal relatonship between each other. Causation indicates that the change in one variable is the cause of the change in the values of the other variable. In the test setting the Trump tweets might cause stock market daily changes but it is also possible that the stock market changes do have an effect on Trump opinions/tweets. Causation is usually studied by organizing a controlled situation which is not possible in real life. But there are also few techniques that can be used when studying e.g. time series such as stock markets. Granger causality test could be done for comparing the TF/IDF scores with the stock daily change data in a way described in the appendix [Granger causality test](#Granger-causality-test)
 
