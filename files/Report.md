@@ -79,7 +79,7 @@ In the next chapters we will explain how the project developed from brainstormin
 
 ### Idea behind the Trumponator
 
-U.S politics have always been one of the factors affecting stock markets. The country is influencial in worldwide perspective and stock markets nationally and internationally follow U.S. politics and relationship to other countries. To give few examples if the political decision is made to raise taxes that has a clear negative affect to the stock markets. Also changing laws and regulations, or export/import sanctions for products may have either positive or negative impact. Goverment spending and misallocating of resources and money supply may hurt the economy resulting either inflationary or deflationary environment. Monetary policy may cause direct up or down change in interest rates and e.g. higher rates make credit more expensive for companies and the stock markets turn down. 
+U.S politics have always been one of the factors affecting stock markets. The country is influencial in worldwide perspective and stock markets nationally and internationally follow U.S. politics and relationship to other countries. To give few examples if the political decision is made to raise taxes that has a clear negative affect to the stock markets. Also changing laws and regulations, or export/import sanctions for products may have either positive or negative impact. Goverment spending and misallocating of resources and money supply may hurt the economy resulting either inflationary or deflationary environment. Monetary politics may cause direct up or down change in interest rates and e.g. higher rates make credit more expensive for companies and the stock markets turn down. 
 
 The interest towards the Donald Trump has arises from his contradictory personality in today's politics in U.S.  As a business man he understands how to manipulate markets but his impulsive behaviour especially towards differing opinions cause unwanted reactions. During the Trump presidency many of the above mentioned political decisions have been made causing uncertainty in the financial markets.
 
@@ -89,9 +89,9 @@ The interest towards the Donald Trump has arises from his contradictory personal
 #### Tweets
 
 The process to access the Twitter tweets of the real Donald Trump account is quite simple:
--Register as Twitter developer (explain carefully for what purpose the data is extracted for)
--Get the Consumer keys and access tokens from Twitter
--Install tweepy module: https://github.com/tweepy/tweepy/
+1. Register as Twitter developer (explain carefully for what purpose the data is extracted for)
+2. Get the Consumer keys and access tokens from Twitter
+3. Install tweepy module: https://github.com/tweepy/tweepy/
 
 However only the latest tweets from period of one year could be fetched via Tweepy API due to Twitter limitations. To get wider data set it was decided to fetch older tweets from one of the open twitter archieves of Trump tweets: http://trumptwitterarchive.com/archive
 
@@ -104,9 +104,9 @@ Only the variables "created_at" standing for timestampt and "text" or the tweet 
 
 Alpha Vantage delivers a free API for real time and historical financial data and most used finance indicators.
 The process to access Alpha 
--Register as Alpha Vantage user
--Get the API key
--Install alpha-vantage module: https://github.com/RomelTorres/alpha_vantage
+1. Register as Alpha Vantage user
+2. Get the API key
+3. Install alpha-vantage module: https://github.com/RomelTorres/alpha_vantage
 
 20-years latest stock market daily closing values are downloaded by selecting symbol='DJI' (the variable name is "4. close"). The startpoint index is saved as date. Yesterday's bin will hold value of change between yesterdays closing and todays closing, so yesterdays tweets get the value impact of today's stock market value development (the variable name is "value change").
 
@@ -153,12 +153,10 @@ After cleaning the tweets and creating the six sentiment classes for stock marke
 
 ##### Tweets
 
-In the graph the average number of tweets yearly and monthly show that tweeting habit of Trump has decreased slowly during presidency period
+In the graph the average number of tweets yearly and monthly show that tweet amounts of Trump has decreased slowly during presidency period
 
-(make the graph)
-
-<figure><img 'https://github.com/vvenla/trumponator/raw/master/files/pictures/ave_tweets.PNG'><figcaption>Average amount of tweets yearly and monthly</figcaption></figure>
-
+<figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/ave_tweets.PNG><figcaption>Average amount of tweets yearly and monthly</figcaption></figure>
+#  
 ##### TF-IDF scores
 
 The TF-IDF score is calculated for each word, using each tweet as a separate document. More information about the process is described in the [Term frequency-inverse document frequency](#Term-frequency-inverse-document-frequency) Term frequency-inverse document frequency.
@@ -166,7 +164,7 @@ The TF-IDF score is calculated for each word, using each tweet as a separate doc
 The total TF-IDF tweet score is averaged for each tweet to represent sentiment score of the tweet. In the Table Statistics for TF_IDF scores it is seen that the TF-IDF score range is widest within the big negative stock market change class and also the mean sentiment score value is biggest in the same class. The smallest mean for the score and lowest standard deviation can be seen in the medium stock market change classes. For negative stock market change classes the sentiment score values vary more than for the positive classes.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_tf_all.PNG><figcaption>Statistics for TF_IDF scores</figcaption></figure>
-
+#  
 (present the tweets with high scores)
 
 ##### Stock market daily changes
@@ -174,13 +172,13 @@ The total TF-IDF tweet score is averaged for each tweet to represent sentiment s
 The stock market daily changes during latest 20 years vary according to the Figure Stock market daily changes time-series presented below. Few interesting peaks hit our analysis period starting from 15th June 2015. In the fall 2015 investors sold shares globally as a result of slowing growth in the GDP of China, a fall in petroleum prices and the Greek debt default in June 2015. Another roller-coaster is seen after a long calm rise period in January-March 2018 when investors suddenly became worried the economy, boosted by huge tax cuts and fear of inflation. After the decline the market returned to the normal trend soon. The analysis period is otherwise quite stable and therefore perfect for detecting weak signals caused by twitter tweets.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/stock_all.png><figcaption>Stock market daily changes time-series</figcaption></figure>
-
+#  
 ##### Comparison of tweet sentiment and stock market data
 
 When plotting the stock market daily changes and TF-IDF scores it is evident that there are only few larger stock market changes during the analysis period. In the scatter plot figure the TF-IDF scores are concentrated close to the zero showing that most tweets don’t include ”significant” words affecting high scores. 
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/Scatter_all.PNG><figcaption>Stock market daily changes vs. tweet sentiment scores</figcaption></figure>
-
+#  
 To be able to use the selected data sets as basis for predictive model we need to prove that there is relationship between these variables. In the appendix [Correlation results](#Correlation-results) the strong evidence is build for the argument that the stock market daily changes are correlated with the tweet TF_IDF scores. Therefore we have good foundation for creating the predictive model based on these data sets.
 
 Although the variables are correlated they do not necessarily have causal relatonship between each other. Causation indicates that the change in one variable is the cause of the change in the values of the other variable. In the test setting the Trump tweets might cause some portion of the stock market daily changes but it is also possible that the stock market changes do have an effect on Trump opinions/tweets. Causation is usually studied by organizing a controlled situation which is not possible in real life. But there are also few techniques that can be used when studying e.g. time series such as stock markets. Granger causality test could be done for comparing the TF/IDF scores with the stock daily change data in a way described in the appendix [Granger causality test](#Granger-causality-test). Due to time issues it was decided not to study causation at this point.
@@ -197,24 +195,23 @@ We splitted the labeled data into training set and validation set. The training 
 The prediction model was formed by taking all the tweets starting at the 15th of June 2015 when the Trump's presidential campaign was launched until 25th of Sep 2018. The results of the model predicting Trump's influence on the stock market are very promising.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_all.PNG><figcaption>Accuracy of the model</figcaption></figure>
-
+#  
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_all.PNG><figcaption>Number of tweets categorizedl</figcaption></figure>
-
+#  
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_per_all.PNG><figcaption>Percentage share of tweets categorized</figcaption></figure>
-
+#  
 For curiosity the model results were separated in two based on the Trump's election day as U.S. President. The election day was the 8th of Nov 2016. During the presidency until 25th of Sep 2018 Trump has posted 1180 tweets.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_aft.PNG><figcaption>Accuracy of the model during presidency</figcaption></figure>
-
+#  
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_aft.PNG><figcaption>Number of tweets during presidency</figcaption></figure>
-
-
+#  
 The rest 1168 tweets before the presidential election day are starting from the presidential campaign launch at 15th June 2015 until the 8th of Nov 2016.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_bef.PNG><figcaption>Accuracy of the model during the presidential campaign</figcaption></figure>
-
+#  
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_bef.PNG><figcaption>Number of tweets during the presidential campaign</figcaption></figure>
-
+#  
 The difference in results is clear before and after the election day. It was decided to separate dataset to train two models before and after the Trump's election as U.S. President. The results of these two models are compared to review if the presidency has improved his power. The assumption is that his authority did not have such an effect on stock markets when he was just one of the applicants during the presidential campaign.
 
 One logical solution is to take equal amount of Trump tweets before he was elected as president. It is necessary to select stock market period close to the period of the "after" model to minimize effects of the market situation. All the tweets before the presidential election day (but after the launch of the campaign) are selected for the "before" model.
@@ -222,15 +219,14 @@ One logical solution is to take equal amount of Trump tweets before he was elect
 As a conclusion accuracy of all the models are presented in the Figure All models. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). (how this was done?) The randomly selected tweets are the worst ones to predict the stock market change. Although the Trump tweets as president seem to be better fit for explaining stock market changes that does not transform to better model when comparing the before and after results. The best model is the one using all the tweets implying that the more data points are available for training the better the result will be.
 
 <figure><img 'https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG'><figcaption>All models</figcaption></figure>
-
+#  
 Plot of the latest stock market values and predicted changes is presented in the Figure Plotting the latest stock market values and predicted changes. The green arrows show the points were the predicted big positive or negative change was correctly predicted and the tweet causing the prediction can be seen attached to the date. If there are several tweets during one day then only the first one is printed. The red arrows visualizes the points where the big positive or negative change was predicted but the real change was not as big or to the opposite direction. 
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/plot_latest.PNG><figcaption>Plotting the latest stock market values and predicted changes</figcaption></figure>
-
+#  
 ### Improvement possibilities
 
 There are still few improvement possibilities that could be done to enhance the model performance. The number of tweets daily and the number of retweets/tweet could be used as explanatory variables. That might highlight the importance of certain days and tweets when training the model. Also we could use mixture of different used stock markets (nationally and internationally) to see how the model succeeds. Or we could try to select only those stock market companies that would be most vulnerable for the Trump tweets.
-
 
 ## Appendix
 
@@ -242,17 +238,17 @@ TF-IDF stands for term frequency-inverse document frequency, and the TF_IDF weig
 Correlation tests are performed to assure if the relationship between the stock market daily changes and TF-IDF scores representing tweet sentiment scores can be found. First the normality of the variables need to be checked. Therefore density plot and histogram for both stock market daily changes and TF-IDF scores are plotted. This chart is a variation of a histogram that uses kernel smoothing to plot values, allowing for smoother distributions by smoothing out the noise. In the plots it is easy to see that the stock market daily change data distribution is normal but TF-IDF scores are not normally distributed. 
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_dc_all.PNG><figcaption>Density plot and histogram for stock market daily change</figcaption></figure>
-
+#  
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_tf_all.PNG><figcaption>Density plot and histogram for TF-IDF scores</figcaption></figure>
-
+#  
 The sampling distribution for Pearson's correlation does assume normality; in particular this means that although you can compute it, conclusions based on significance testing may not be sound. Outliers seen in the Figure Boxplot for the variables for varibles can have great influence on Pearson's correlations. Many outliers in applied settings reflect measurement failures or other factors that the model is not intended to generalise to. 
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/boxplot_all.PNG><figcaption>Boxplot for the variables</figcaption></figure>
-
+#  
 Rank correlation non-parametric tests can be used for examing independency of variables since test like Spearman's and Kendall's Tau do not rest upon an assumption of normality. Rank correlation refers to the association between the observed values of two variables. The negative association means that as the values for one variable increase, then the values of the other variable decrease. Correlation quantifies this association, often as a measure between the values -1 to 1 for perfectly negatively correlated and perfectly positively correlated. The calculated correlation is referred to as the “correlation coefficient.” This correlation coefficient can then be interpreted to describe the measures. In the table Correlation test results the results of the three correlation tests are presented. All of them indicate that there is correlation between stock market daily changes and TF/IDF scores. The selected significance level is 5%.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/Corr_all.PNG><figcaption>Correlation test results</figcaption></figure>
-
+#  
 
 ### Granger causality test
 
