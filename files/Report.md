@@ -105,7 +105,8 @@ The process to access Alpha
 -Get the API key
 -Install alpha-vantage module: https://github.com/RomelTorres/alpha_vantage
 
-20-years latest stock market daily closing values are downloaded by selecting symbol='DJI' (the variable name is "4. close"). 
+20-years latest stock market daily closing values are downloaded by selecting symbol='DJI' (the variable name is "4. close"). The startpoint index is saved as date. Yesterday's bin will hold value of change between yesterdays closing and todays closing, so yesterdays tweets get the value impact of today's stock market value development (the variable name is "value change").
+
 
 ### Wrangling
 
@@ -135,7 +136,9 @@ When we tried to combine the data from tweets and stock markets, we noticed that
 
 #### Stock market data
 
-Lorem ipsum... (Vili) 
+The stock market daily change values are categorized in six sentiment classes: small, medium and big negative or positive class. The small positive class includes the smallest 25% of positive change values and the big positive class includes the biggesst 25% of positive change values. The medium positive class includes rest of the positive change values. The negative classes are formed in similar way for negative change values.
+
+The stock markets are open only on business days so it was decided to impute non-business day values. The method used is to copy the closest class for the missing dates. For example the Sat and Sun class is the same with the following first available class on Monday. Now we have change value classes determined for all the days and all the possible tweets. The dates and change values are saved into the .json file.
 
 #### Combining the datasets
 
