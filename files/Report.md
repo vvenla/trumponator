@@ -8,7 +8,7 @@
   * [Communication of results](#communication-of-results)
   * [Operationalization](#operationalization)
 - [Steps of action](#steps-of-action)
-  * [Idea](#idea)
+  * [Idea behind the Trumponator](idea-behind-the-trumponator)
   * [Uploading the data](#uploading-the-data)
     + [Tweets](#tweets)
     + [Stock market data](#stock-market-data)
@@ -17,8 +17,11 @@
     + [Stock market data](#stock-market-data)
     + [Combining the datasets](#combining-the-datasets)
   * [Data analysis](#data-analysis-1)
+    + [Descriptive statistics](#descriptive-statistics)
     + [Making the model](#making-the-model)
-- [Results](#results)
+    + [Results](#results)
+    + [Improvement possibilities](#Improvement-possibilities)
+- [Appendix](#appendix)
 
 
 # Trumponator - Behind the scenes
@@ -222,7 +225,7 @@ Plot of the latest stock market values and predicted changes is presented in the
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/plot_latest.PNG "Plotting the latest stock market values and predicted changes")
 
-## Improvement possibilities
+### Improvement possibilities
 
 There are still few improvement possibilities that could be done to enhance the model performance. The number of tweets daily and the number of retweets/tweet could be used as explanatory variables. That might highlight the importance of certain days and tweets when training the model. Also we could use mixture of different used stock markets (nationally and internationally) to see how the model succeeds. Or we could try to select only those stock market companies that would be most vulnerable for the Trump tweets.
 
