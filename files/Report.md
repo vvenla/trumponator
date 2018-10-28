@@ -179,7 +179,8 @@ The stock market daily changes during latest 20 years vary according to the Figu
 When plotting the stock market daily changes and TF-IDF scores it is evident that there are only few larger stock market changes during the analysis period. In the Figure Stock market daily changes vs. tweet sentiment scores the TF-IDF scores are concentrated close to the zero showing that most tweets don’t include ”significant” words affecting high scores. 
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/Scatter_all.PNG><figcaption>Stock market daily changes vs. tweet sentiment scores</figcaption></figure>
-<br/>
+<br/>  
+&nbsp;
 
 To be able to use the selected data sets as basis for predictive model we need to prove that there is relationship between these variables. In the appendix [Correlation results](#Correlation-results) the strong evidence is build for the argument that the stock market daily changes are correlated with the tweet TF_IDF scores. Therefore we have good foundation for creating the predictive model based on these data sets.
 
@@ -198,28 +199,35 @@ The prediction model was formed by taking all the tweets starting at the 15th of
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_all.PNG><figcaption>Accuracy of the model</figcaption></figure>
 <br/>
+&nbsp;
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_all.PNG><figcaption>Number of tweets categorized</figcaption></figure>
 <br/>
+&nbsp;
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_per_all.PNG><figcaption>Percentage share of tweets categorized</figcaption></figure>
 <br/>
+&nbsp;
 
 For curiosity the model results were separated in two based on the Trump's election day as U.S. President. The election day was the 8th of Nov 2016. During the presidency until 25th of Sep 2018 Trump has posted 1180 tweets.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_aft.PNG><figcaption>Accuracy of the model during presidency</figcaption></figure>
 <br/>
+&nbsp;
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_aft.PNG><figcaption>Number of tweets during presidency</figcaption></figure>
 <br/>
+&nbsp;
 
 The rest 1168 tweets before the presidential election day are starting from the presidential campaign launch at 15th June 2015 until the 8th of Nov 2016.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_bef.PNG><figcaption>Accuracy of the model during the presidential campaign</figcaption></figure>
 <br/>
+&nbsp;
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_bef.PNG><figcaption>Number of tweets during the presidential campaign</figcaption></figure>
 <br/>
+&nbsp;
 
 The difference in results is clear before and after the election day. It was decided to separate dataset to train two models before and after the Trump's election as U.S. President. The results of these two models are compared to review if the presidency has improved his power. The assumption is that his authority did not have such an effect on stock markets when he was just one of the applicants during the presidential campaign.
 
@@ -229,6 +237,7 @@ As a conclusion accuracy of all the models are presented in the Figure All model
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG><figcaption>All models</figcaption></figure>
 <br/>
+&nbsp;
 
 Plot of the latest stock market values and predicted changes is presented in the Figure Plotting the latest stock market values and predicted changes. The green arrows show the points were the predicted big positive or negative change was correctly predicted and the tweet causing the prediction can be seen attached to the date. If there are several tweets during one day then only the first one is printed. The red arrows visualizes the points where the big positive or negative change was predicted but the real change was not as big or to the opposite direction. 
 
@@ -250,14 +259,17 @@ Correlation tests are performed to assure if the relationship between the stock 
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_dc_all.PNG><figcaption>Density plot and histogram for stock market daily change</figcaption></figure>
 <br/>
+&nbsp;
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/hist_tf_all.PNG><figcaption>Density plot and histogram for TF-IDF scores</figcaption></figure>
 <br/>
+&nbsp;
 
 The sampling distribution for Pearson's correlation does assume normality; in particular this means that although you can compute it, conclusions based on significance testing may not be sound. Outliers seen in the Figure Boxplot for the variables for varibles can have great influence on Pearson's correlations. Many outliers in applied settings reflect measurement failures or other factors that the model is not intended to generalise to. 
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/boxplot_all.PNG><figcaption>Boxplot for the variables</figcaption></figure>
 <br/>
+&nbsp;
 
 Rank correlation non-parametric tests can be used for examing independency of variables since test like Spearman's and Kendall's Tau do not rest upon an assumption of normality. Rank correlation refers to the association between the observed values of two variables. The negative association means that as the values for one variable increase, then the values of the other variable decrease. Correlation quantifies this association, often as a measure between the values -1 to 1 for perfectly negatively correlated and perfectly positively correlated. The calculated correlation is referred to as the “correlation coefficient.” This correlation coefficient can then be interpreted to describe the measures. In the table Correlation test results the results of the three correlation tests are presented. All of them indicate that there is correlation between stock market daily changes and TF/IDF scores. The selected significance level is 5%.
 
