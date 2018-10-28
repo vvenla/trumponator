@@ -177,14 +177,14 @@ The prediction model was formed by taking all the tweets starting at the 15th of
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_per_all.PNG "Long-term percentage share of tweets")
 
-For curiosity the model results were separated in two based on the Trump's election day as U.S. President. The election day was the 8th of Nov 2016. During the presidency until 25th of Sep 2018 Trump has posted 854 tweets (counting only business days).
+For curiosity the model results were separated in two based on the Trump's election day as U.S. President. The election day was the 8th of Nov 2016. During the presidency until 25th of Sep 2018 Trump has posted 1180 tweets.
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_aft.PNG "Accuracy of the model during presidency")
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_num_aft.PNG "Number of tweets during presidency")
 
 
-The rest 831 tweets before the presidential election day are starting from the presidential campaign launch at 15th June 2015 until the 8th of Nov 2016.
+The rest 1168 tweets before the presidential election day are starting from the presidential campaign launch at 15th June 2015 until the 8th of Nov 2016.
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_bef.PNG "Accuracy of the model during the presidential campaign")
 
@@ -194,14 +194,14 @@ The difference in results is clear before and after the election day. It was dec
 
 One logical solution is to take equal amount of Trump tweets before he was elected as president. It is necessary to select stock market period close to the period of the "after" model to minimize effects of the market situation. All the tweets before the presidential election day (but after the launch of the campaign) are selected for the "before" model.
 
-As a conclusion accuracy of all the models are presented in the bar chart. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). The randomly selected tweets are the worst ones to predict the stock market change. Although the Trump tweets as president seem to be better fit for explaining stock market changes that does not transform to better model when comparing the before and after results. The best model is the one using all the tweets implying that the more data points are available for training the better the result will be.
+As a conclusion accuracy of all the models are presented in the bar chart. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). (how this was done?) The randomly selected tweets are the worst ones to predict the stock market change. Although the Trump tweets as president seem to be better fit for explaining stock market changes that does not transform to better model when comparing the before and after results. The best model is the one using all the tweets implying that the more data points are available for training the better the result will be.
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG "All models")
 
 
-Improvements
+## Improvement possibilities
 
-The number of tweets daily and number of retweets could be used as explanatory variables.
+There are still few improvement possibilities that could be done to enhance the model performance. The number of tweets daily and the number of retweets/tweet could be used as explanatory variables. That might highlight the importance of certain days and tweets when training the model. Also we could use mixture of different used stock markets (nationally and internationally) to see how the model succeeds. Or we could try to select only those stock market companies that would be most vulnerable for the Trump tweets.
 
 
 ## Appendix
