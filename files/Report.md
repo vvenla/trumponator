@@ -92,7 +92,7 @@ The process to access the Twitter tweets of the real Donald Trump account is qui
 
 However only the latest tweets from period of one year could be fetched via Tweepy API due to Twitter limitations. To get wider data set it was decided to fetch older tweets from one of the open twitter archieves of Trump tweets: http://trumptwitterarchive.com/archive
 
-Authenticity of the older tweets can not be verified but there is no other way to get enough tweets for analyses.
+Authenticity of the older tweets can not be verified but there is no other way to get enough tweets for analyses. The starting date for the oldest tweet was from the 15th of June 2015 since that was the date when Trump launched his presidential campaign.
 
 Only the variables "created_at" standing for timestampt and "text" or the tweet itself were saved into the .json file. The encoding option is selected to UTF-8.
 
@@ -142,11 +142,17 @@ The stock markets are open only on business days so it was decided to impute non
 
 #### Combining the datasets
 
-Lorem ipsum... (Vili)
+After cleaning the tweets and creating the six sentiment classes for stock market daily changes these two datasets were combined. Since each tweet had a timestamp and daily change value a date it was easy to combine by selecting date out of the timestamp. There might be dates where no tweets have been published and some dates have several tweets published. 
 
 ### Data analysis
 
 #### Descriptive statistics
+
+##### Tweets
+
+In the graph the average number of tweets early and monthly show that tweeting habit of Trump has decreased slowly during presidency period
+
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/ave_tweets.png "Average amount of tweets yearly and monthly")
 
 ##### TF-IDF scores
 
@@ -162,7 +168,7 @@ The total TF-IDF tweet score is averaged for each tweet to represent sentiment s
 
 The stock market daily changes during latest 20 years vary according to the figure presented below. Few interesting peaks hit our analysis period starting from 15th June 2015. In the fall 2015 investors sold shares globally as a result of slowing growth in the GDP of China, a fall in petroleum prices and the Greek debt default in June 2015. Another roller-coaster is seen after a long calm rise period in January-March 2018 when investors suddenly became worried the economy, boosted by huge tax cuts and fear of inflation. After the decline the market returned to the normal trend soon. The analysis period is otherwise quite stable and therefore perfect for detecting weak signals caused by twitter tweets.
 
-![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/stock_all.PNG "Stock market daily changes time-series")
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/stock_all.png "Stock market daily changes time-series")
 
 ##### Comparison of tweet sentiment and stock market data
 
@@ -181,8 +187,7 @@ We used the tweets labeled with the stock market changes to teach the model. Fas
 
 We splitted the labeled data into training set and validation set. The training set consisted of 85% of the data, and we used the remaining 15% to validate and test the accuracy of the model. 
 
-## Results
-
+#### Results
 
 The prediction model was formed by taking all the tweets starting at the 15th of June 2015 when the Trump's presidential campaign was launched until 25th of Sep 2018. The results of the model predicting Trump's influence on the stock market are very promising.
 
@@ -213,7 +218,7 @@ As a conclusion accuracy of all the models are presented in the bar chart. Also 
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG "All models")
 
-Plot of the latest stock market values and predicted changes is presented in the figure. The green arrows show the points were the predicted big positive or negative change was correctly predicted and the tweet causing the prediction can be seen attached to the date. The red arrows visualizes the points where the big positive or negative change was predicted but the real change was not as big or to the opposite direction. 
+Plot of the latest stock market values and predicted changes is presented in the figure. The green arrows show the points were the predicted big positive or negative change was correctly predicted and the tweet causing the prediction can be seen attached to the date. If there are several tweets during one day then only the first one is printed. The red arrows visualizes the points where the big positive or negative change was predicted but the real change was not as big or to the opposite direction. 
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/plot_latest.PNG "Plotting the latest stock market values and predicted changes")
 
