@@ -240,7 +240,7 @@ One logical solution is to take equal amount of Trump tweets before he was elect
 
 As a conclusion accuracy of all the models are presented in the Figure All models. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). (how this was done?) The randomly selected tweets are the worst ones to predict the stock market change. Although the Trump tweets as president seem to be better fit for explaining stock market changes that does not transform to better model when comparing the before and after results. The best model is the one using all the tweets implying that the more data points are available for training the better the result will be.
 
-<figure><img 'https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG'><figcaption>All models</figcaption></figure>
+<figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG><figcaption>All models</figcaption></figure>
 &nbsp;
 &nbsp;
 
@@ -285,14 +285,12 @@ Rank correlation non-parametric tests can be used for examing independency of va
 
 ### Granger causality test
 
-Granger Causality (GC) is a probabilistic approach for determining if information about past of one variable can explain another and it is based on aversion of the probabilistic theory of causality. A time-series Y (stock market daily changes) can be written as an autoregressive process in which the past values of Y are able to explain (in part) the current value of Y:
-
-
-
-Consider another variable X (tweets TF_IDF scores) which has past values as well. If the past values of X help improve the prediction of current values of Y beyond what we get with past values of Y alone, then X is said to Granger Cause Y. The test is under taken as:
+Granger Causality (GC) is a probabilistic approach for determining if information about past of one variable can explain another and it is based on aversion of the probabilistic theory of causality. A time-series Y (stock market daily changes) can be written as an autoregressive process in which the past values of Y are able to explain (in part) the current value of Y.
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/math1.PNG)
 
-The test is an F-test on all being jointly equal to zero for all values of J. If you reject the null hypothesis then X is said to Granger Cause Y.
+Consider another variable X (tweets TF_IDF scores) which has past values as well. If the past values of X help improve the prediction of current values of Y beyond what we get with past values of Y alone, then X is said to Granger Cause Y. The test is under taken as:
 
 ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/math2.PNG)
+
+The test is an F-test on all being jointly equal to zero for all values of J. If you reject the null hypothesis then X is said to Granger Cause Y.
