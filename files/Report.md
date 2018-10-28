@@ -165,7 +165,7 @@ The TF-IDF score is calculated for each word, using each tweet as a separate doc
 
 The total TF-IDF tweet score is averaged for each tweet to represent sentiment score of the tweet. In the Table Statistics for TF_IDF scores it is seen that the TF-IDF score range is widest within the big negative stock market change class and also the mean sentiment score value is biggest in the same class. The smallest mean for the score and lowest standard deviation can be seen in the medium stock market change classes. For negative stock market change classes the sentiment score values vary more than for the positive classes.
 
-<figure><img 'https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_tf_all.png'><figcaption>Statistics for TF_IDF scores</figcaption></figure>
+<figure><img "https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_tf_all.png"><figcaption>Statistics for TF_IDF scores</figcaption></figure>
 
 (present the tweets with high scores)
 
