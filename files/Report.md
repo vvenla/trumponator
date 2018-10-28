@@ -51,9 +51,9 @@ intelligence to predict how the stock markets will behave.
 ### Data
 
 Twitter tweets of Donald Trump, preprocessed by removing special characters, punctuation and case specific stopwords. We access 
-the tweets by Twitter API.
+the tweets by Tweepy API.
  
-Stock market information (timestamps, value) accessed through XXX -API
+Stock market information (timestamps, value) accessed through Alpha Vantage API
 
 
 ### Data analysis
@@ -85,15 +85,27 @@ The interest towards the Donald Trump has arises from his contradictory personal
 
 #### Tweets
 
-Twitter tweets from the real Donald Trump account were extracted but due to Twitter limitations only the latest 3000 tweets could be fetched via Twitter API. To get wider data set it was decided to fetch older tweets from one of the open twitter archieves of Trump tweets:
+The process to access the Twitter tweets of the real Donald Trump account is quite simple:
+-Register as Twitter developer (explain carefully for what purpose the data is extracted for)
+-Get the Consumer keys and access tokens from Twitter
+-Install tweepy module: https://github.com/tweepy/tweepy/
 
-http://trumptwitterarchive.com/archive
+However only the latest tweets from period of one year could be fetched via Tweepy API due to Twitter limitations. To get wider data set it was decided to fetch older tweets from one of the open twitter archieves of Trump tweets: http://trumptwitterarchive.com/archive
 
 Authenticity of the older tweets can not be verified but there is no other way to get enough tweets for analyses.
 
+Only the variables "created_at" standing for timestampt and "text" or the tweet itself were saved into the .json file. The encoding option is selected to UTF-8.
+
+
 #### Stock market data
 
-Lorem ipsum... (Vili)
+Alpha Vantage delivers a free API for real time and historical financial data and most used finance indicators.
+The process to access Alpha 
+-Register as Alpha Vantage user
+-Get the API key
+-Install alpha-vantage module: https://github.com/RomelTorres/alpha_vantage
+
+20-years latest stock market daily closing values are downloaded by selecting symbol='DJI' (the variable name is "4. close"). 
 
 ### Wrangling
 
