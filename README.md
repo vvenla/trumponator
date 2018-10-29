@@ -17,7 +17,7 @@ Visualization of some predictions drawn over the actual stock market index. Gree
 
 3. Run trumponator.py using [python3](https://realpython.com/installing-python/).
 
- `python3 trumponator.py "write or paste here the tweet you want to predict from`  
+ `python3 trumponator.py "write or paste here the tweet you want to predict from"`  
 
  ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/trump_use-case_MAGA.gif)  
 
