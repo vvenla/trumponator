@@ -20,6 +20,8 @@ model = fasttext.load_model(MODEL_DIR + 'all_model.bin')
 
 #print (model.labels)
 
+if len(sys.argv) > 2:
+    print ("There are too many command line arguments. Did you forget to wrap the tweet with \" ̧̧\" ?")
 if len(sys.argv) > 1:
     tweet = sys.argv[1]
     print("Predict the stock reacton for tweet:\n\t", tweet)
