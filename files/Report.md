@@ -229,7 +229,7 @@ The difference in results between before and after the election day is minor. It
 
 One logical solution is to take equal amount of Trumps tweets before he was elected as president. It is necessary to select stock market period close to the period of the "after" model to minimize effects of the market situation. All the tweets before the presidential election day (but after the launch of the campaign) are selected for the "before" model.
 
-As a conclusion accuracy of all the models are presented in the Figure All models. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). The randomly selected tweets are the worst ones to predict the stock market change. The Trump tweets as president don't seem to explain stock market changes significantly better than the tweets during the presidential campaign when comparing the before and after results. However a slightly better model is the one using the tweets during the presidential campaign.
+As a conclusion accuracy of all the models are presented in the Figure All models. Also the fourth model was built by selecting randomly tstock market changes to the tweets. The randoml classifier is naturally the worst model to predict the stock market changes. The Trump tweets as president don't seem to explain stock market changes significantly better than the tweets during the presidential campaign when comparing the before and after results. However a slightly better model is the one using the tweets during the presidential campaign.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/All_models.PNG><figcaption>All models</figcaption></figure>
 <br/>
