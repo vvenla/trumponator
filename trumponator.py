@@ -14,6 +14,7 @@ import fasttext
 import sys
 
 MODEL_DIR = "models/"
+LABELS_AS_TEXT = {"BIGPOS": "BIG POSITIVE CHANGE ", "MEDPOS": "MEDIUM POSITIVE CHANGE ", "SMAPOS": "SMALL POSITIVE CHANGE ", "SMANEG": "SMALL NEGATIVE CHANGE ", "MEDNEG": "MEDIUM NEGATIVE CHANGE ",  "BIGNEG": "BIG NEGATIVE CHANGE "}
 
 model = fasttext.load_model(MODEL_DIR + 'all_model.bin')
 
@@ -26,7 +27,8 @@ if len(sys.argv) > 1:
     pred = model.predict(tweet)
     pred = pred[0][0] #take the label out of lists
     pred = pred[9:] #remove the "__label__" from front of it
-    print ("The stock will change " + pred + " on the next business day!")
+    pred_as_text = LABELS_AS_TEXT[pred]
+    print (pred_as_text + "predicted to next business day!")
 else:
     print ("You didn't give a tweet to predict from!")
 
