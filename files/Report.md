@@ -153,7 +153,7 @@ After cleaning the tweets and creating the six sentiment classes for stock marke
 
 ##### Tweets
 
-In the graph the Number of tweets yearly and monthly show that tweet amounts of Trump has decreased slowly during presidency period.
+In the graph the Number of tweets yearly and monthly show that tweet amounts of Trump has decreased during presidency period.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/ave_tweets.PNG><figcaption>Number of tweets yearly and monthly</figcaption></figure>
 <br/>
@@ -162,7 +162,7 @@ In the graph the Number of tweets yearly and monthly show that tweet amounts of 
 
 The TF-IDF score is calculated for each word, using each tweet as a separate document. More information about the process is described in the [Term frequency-inverse document frequency](#Term-frequency-inverse-document-frequency) Term frequency-inverse document frequency.
 
-The total TF-IDF tweet score is averaged for each tweet to represent sentiment score of the tweet. In the Table Statistics for TF-IDF scores it is seen that the TF-IDF score range is widest within the big negative stock market change class and also the mean sentiment score value is biggest in the same class. The smallest mean for the score and lowest standard deviation can be seen in the medium stock market change classes. For negative stock market change classes the sentiment score values vary more than for the positive classes.
+The total TF-IDF tweet score is averaged for each tweet to represent sentiment score of the tweet. In the Table Statistics for TF-IDF scores it is seen that the TF-IDF score range is widest within the small negative stock market change class and also the mean sentiment score value is biggest in the same classes. The smallest mean for the score and lowest standard deviation can be seen in the medium stock market change classes. For negative stock market change classes the sentiment score values vary more than for the positive classes.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/cross_tf_all.PNG><figcaption>Statistics for TF-IDF scores</figcaption></figure>
 <br/>
@@ -271,7 +271,7 @@ The sampling distribution for Pearson's correlation does assume normality; in pa
 <br/>
 &nbsp;
 
-Rank correlation non-parametric tests can be used for examing independency of variables since test like Spearman's and Kendall's Tau do not rest upon an assumption of normality. Rank correlation refers to the association between the observed values of two variables. The negative association means that as the values for one variable increase, then the values of the other variable decrease. Correlation quantifies this association, often as a measure between the values -1 to 1 for perfectly negatively correlated and perfectly positively correlated. The calculated correlation is referred to as the “correlation coefficient.” This correlation coefficient can then be interpreted to describe the measures. In the table Correlation test results the results of the three correlation tests are presented. All of them indicate that there is correlation between stock market daily changes and TF/IDF scores. The selected significance level is 5%.
+Rank correlation non-parametric tests can be used for examing independency of variables since test like Spearman's and Kendall's Tau do not rest upon an assumption of normality. Rank correlation refers to the association between the observed values of two variables. The negative association means that as the values for one variable increase, then the values of the other variable decrease. Correlation quantifies this association, often as a measure between the values -1 to 1 for perfectly negatively correlated and perfectly positively correlated. The calculated correlation is referred to as the “correlation coefficient.” This correlation coefficient can then be interpreted to describe the measures. In the table Correlation test results the results of the three correlation tests are presented. The rank correlation tests indicate that there is correlation between stock market daily changes and TF/IDF scores. The selected significance level is 5%.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/Corr_all.PNG><figcaption>Correlation test results</figcaption></figure>
 <br/>
