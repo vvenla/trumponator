@@ -34,7 +34,7 @@
 
 ### Vili
 
-Vili is a graduate student in Data Science with a computer science background.
+Vili is a graduate student in Data Science with a Computer Science background.
 
 ### Suvi
 
@@ -42,7 +42,7 @@ Suvi has Bachelor in Statistics and some introductory Data Science Master studie
 
 ### Venla
 
-Venla has been studying Mathematics and Computer science before starting the Danta Science masters program. She had some experience of natural language progressing before the project.
+Venla has been studying Mathematics and Computer Science before starting the Danta Science masters program. She had some experience of natural language progressing before the project.
 
 ## Project description
 
