@@ -17,11 +17,11 @@ Visualization of some predictions drawn over the actual stock market index. Gree
 
 3. Run trumponator.py using [python3](https://realpython.com/installing-python/).
 
-`python3 trumponator.py "write or paste here the tweet you want to predict from`
+ `python3 trumponator.py "write or paste here the tweet you want to predict from`  
 
-![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/trump_use-case_MAGA.gif)
+ ![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/trump_use-case_MAGA.gif)  
 
-In the gif above the program is run in a conda virtual environment called "alphavantage", which has all the required dependencies installed. You can install the dependencies in any environment of your liking, or not to use virtual environment at all.
+ In the gif above the program is run in a conda virtual environment called "alphavantage", which has all the required dependencies installed. You can install the dependencies in any environment of your liking, or not to use virtual environment at all.
 
 4. Read the result, invest and profit $$$.
 
