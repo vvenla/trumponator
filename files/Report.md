@@ -34,7 +34,7 @@
 
 ### Vili
 
-Lorem ipsum...
+Vili is a graduate student in Data Science with a computer science background.
 
 ### Suvi
 
@@ -67,7 +67,7 @@ The supervised vector model is built with Fast Text -library, where the tweets a
 
 The document of the project and findings can be found in github with the visualization of the real stock market daily changes and the changes our model predicted. The power of the model is demonstrated by applying the predictor to recent tweets of Trump.
 
-(github page)
+[The github page](https://vvenla.github.io/trumponator/)
 
 ### Operationalization
 
