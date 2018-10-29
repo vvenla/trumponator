@@ -5,8 +5,9 @@ This is a project work for Introduction to Data Science -course of University of
 
 ## Trumponator in action
 
-TODO gif and pitch here
-
+![alt text](https://www.github.com/vvenla/trumponator/raw/master/files/presentation/ezgif.com-video-to-gif.gif)
+      
+Visualization of some predictions drawn over the actual stock market index. Green arrows are the predictions that were given to the tweets that are written to the upper part of the animation. Red arrows represent predictions for which tweets are not shown in this animation.
 
 ## How to use it
 
@@ -16,15 +17,13 @@ TODO gif and pitch here
 
 3. Run trumponator.py using [python3](https://realpython.com/installing-python/).
 
-`python3 trumponator.py`
+`python3 trumponator.py "write or paste here the tweet you want to predict from`
 
-TODO add gif
+![alt text](https://github.com/vvenla/trumponator/raw/master/files/pictures/trump_use-case_MAGA.gif)
 
-4. Give the program a tweet on the command line.
+In the gif above the program is run in a conda virtual environment called "alphavantage", which has all the required dependencies installed. You can install the dependencies in any environment of your liking, or not to use virtual environment at all.
 
-TODO add gif
-
-5. Read the result, invest and profit $$$.
+4. Read the result, invest and profit $$$.
 
 ### How to develop Trumponator for your own needs
 
