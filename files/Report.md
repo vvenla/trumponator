@@ -26,10 +26,6 @@
 
 # Trumponator - Behind the scenes
 
-> Report
-
-<!-- toc -->
-
 ## The Team
 
 ### Vili
@@ -42,7 +38,7 @@ Suvi has Bachelor in Statistics and some introductory Data Science Master studie
 
 ### Venla
 
-Venla has been studying Mathematics and Computer Science before starting the Danta Science masters program. She had some experience of natural language progressing before the project.
+Venla has been studying Mathematics and Computer Science before starting the Data Science masters program. She had some experience of natural language progressing before the project.
 
 ## Project description
 
@@ -219,7 +215,7 @@ For curiosity the model results were separated in two based on the Trump's elect
 <br/>
 &nbsp;
 
-The rest 796 tweets are predicted before the presidential election day starting from the presidential campaign launch at 15th June 2015 until the 8th of Nov 2016.
+The rest 1173 tweets are predicted before the presidential election day starting from the presidential campaign launch at 15th June 2015 until the 8th of Nov 2016.
 
 <figure><img src=https://github.com/vvenla/trumponator/raw/master/files/pictures/pie_bef.PNG><figcaption>Accuracy of the model during the presidential campaign</figcaption></figure>
 <br/>
@@ -229,9 +225,9 @@ The rest 796 tweets are predicted before the presidential election day starting 
 <br/>
 &nbsp;
 
-The difference in results is clear before and after the election day. It was decided to separate dataset to train two models before and after the Trump's election as U.S. President. The results of these two models are compared to review if the presidency has improved his power. The assumption is that his authority did not have such an effect on stock markets when he was just one of the applicants during the presidential campaign.
+The difference in results between before and after the election day is minor. It was decided to separate dataset to train two models before and after the Trump's election as U.S. President. The results of these two models are compared to review if the presidency has improved his power. The assumption is that his authority did not have such an effect on stock markets when he was just one of the applicants during the presidential campaign.
 
-One logical solution is to take equal amount of Trump tweets before he was elected as president. It is necessary to select stock market period close to the period of the "after" model to minimize effects of the market situation. All the tweets before the presidential election day (but after the launch of the campaign) are selected for the "before" model.
+One logical solution is to take equal amount of Trumps tweets before he was elected as president. It is necessary to select stock market period close to the period of the "after" model to minimize effects of the market situation. All the tweets before the presidential election day (but after the launch of the campaign) are selected for the "before" model.
 
 As a conclusion accuracy of all the models are presented in the Figure All models. Also the fourth model was built by selecting randomly tweets during the total time period (15.6.2015-25.9.2018). The randomly selected tweets are the worst ones to predict the stock market change. The Trump tweets as president don't seem to explain stock market changes significantly better than the tweets during the presidential campaign when comparing the before and after results. However a slightly better model is the one using the tweets during the presidential campaign.
 
